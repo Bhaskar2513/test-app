@@ -7,3 +7,5 @@ class User(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String(100))
     age = Column(Integer)
+    email = Column(String(150), unique=True, nullable=False)
+    contact_number = Column(String(15), nullable=False)
